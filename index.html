@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
-    <link href="./styles.css" rel="stylesheet">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>くろねこラビリンス</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+<script src="js/engine/scene.js"></script>
+<script src="js/engine/sound.js"></script>
+<script src="js/engine/sprite.js"></script>
+<script src="js/engine/dpad.js"></script>
+<script src="js/engine/party.js"></script>
+<script src="js/engine/text.js"></script>
+<script src="js/engine/tile.js"></script>
+<script src="js/engine/charactertile.js"></script>
+<script src="js/engine/tilemap.js"></script>
+<script src="js/engine/game.js"></script>
+<script src="js/map.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
